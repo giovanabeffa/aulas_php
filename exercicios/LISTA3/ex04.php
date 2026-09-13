@@ -11,3 +11,5 @@ $produtos = [
 foreach ($produtos as $item) {
     echo "<strong>Produto:</strong> {$item["nome"]} - <strong>Valor:</strong> R$ {$item["preco"]}<br>";
 };
+
+?>
