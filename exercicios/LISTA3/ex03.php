@@ -5,5 +5,5 @@ $configuracoes = ["dominio" => "unifio.edu.br", "https" => "ativado", "limite_up
 
 //Extração do índice $chave e seu conteúdo $valor
 foreach ($configuracoes as $chave => $valor) {
-    echo "<strong>" . $chave . "</strong>" . ": " . $valor . "<br>";
+    echo "<strong>$chave</strong>: $valor<br>";
 }
