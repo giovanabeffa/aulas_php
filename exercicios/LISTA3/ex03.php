@@ -7,3 +7,5 @@ $configuracoes = ["dominio" => "unifio.edu.br", "https" => "ativado", "limite_up
 foreach ($configuracoes as $chave => $valor) {
     echo "<strong>$chave</strong>: $valor<br>";
 }
+
+?>
