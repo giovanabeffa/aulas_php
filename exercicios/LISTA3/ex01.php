@@ -10,3 +10,5 @@ $total = count($categorias);
 for ($i = 0; $i < $total; $i++) {
     echo "Categoria: {$categorias[$i]}<br>";
 }
+
+?>
