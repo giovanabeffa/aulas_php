@@ -10,3 +10,5 @@ $cliente = [
 
 // Acessando o dado através de sua chave nominal
 echo "O cliente {$cliente["nome"]} mora em {$cliente["cidade"]}. Contato: {$cliente["email"]}";
+
+?>
