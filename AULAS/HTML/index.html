@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Produtos</title>
+</head>
+<body>
+    <header>
+        <h1>Painel Administrativo - UNIFIO</h1>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Produtos cadastrados</h2>
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>PRODUTO</th>
+                    <th>ESTOQUE</th>
+                    <th>PREÇO</th>
+                    <th>AÇÕES</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Monitor</td>
+                    <td>15</td>
+                    <td>1.200,00</td>
+                    <td><a href="editar.php?id=1">Editar</a></td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Teclado</td>
+                    <td>8</td>
+                    <td>250,00</td>
+                    <td><a href="editar.php?id=2">Editar</a></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <br><br><hr><br>
+
+        <h2>Cadastrar Novo Produto</h2>
+        <form action="salvar_produto.php" method="POST">
+            <label for="txtNome">Nome do produto</label>
+            <input type="text" name="nome_produto" id="txtNome" required>
+
+            <br><br>
+
+            <label for="numPreco">Preço Unitário: (R$)</label>
+            <input type="number" step="0.01" id="numPreco" name="preco_produto" required>
+
+            <br><br>
+
+            <label for="selCategoria">Categoria:</label>
+            <select name="categoria_id" id="selCategoria">
+                <option value="">-- Selecione --</option>
+                <option value="1">Eletrônicos</option>
+                <option value="2">Móveis de Escritório</option>
+                <option value="3">Livros Acadêmicos</option>
+            </select>
+
+            <br><br>
+
+            <label for="txtDescricao">Descrição Técnica</label>
+            <textarea name="desc_produto" id="txtDescricao" rows="4" cols="40"></textarea>
+
+            <br><br>
+
+            <button type="submit">Gravar Produto no Sistema</button>
+        </form>
+        
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy 2026 Engenharia de Software - Projeto Integrado II</p>
+    </footer>
+</body>
+</html>
